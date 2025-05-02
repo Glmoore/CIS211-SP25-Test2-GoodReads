@@ -32,3 +32,72 @@ body {
     background-color: var(--color-bg-body);
 
 }
+
+.row {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+}
+
+.book .star-container {
+    color: orange;
+    display: inline-block;
+    text-decoration: none;
+    padding: 0.25rem 1rem;
+    border-radius: 8px;
+    border: 2px solid transparent;
+}
+
+.book .star-container:hover {
+    background-color: var(--color-bg-rating-star-empty);
+}
+
+.book .star-container svg:last-child {
+    color: lightgrey;
+}
+
+footer {
+    background-color: #dcd6cc;
+}
+
+footer.col {
+    /*min-width: 200px;*/
+    width: 30%;
+    flex: 1;
+}
+
+footer.col:last-child {
+    margin-left: auto;
+}
+
+.book span {
+    color: var(--color-text-disabled);
+}
+
+.book span.star-rating {
+    color: var(--color-text-body-light);
+    font-size: 0.5rem;
+}
+
+footer .app-button-container {
+    gap: 1rem;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer li a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--color-text-body-light);
+    /*text-decoration: ;*/
+}
+
+footer .store-button {
+    max-width: 140px;
+}
+
+footer .col:last-child {
+    margin-left: auto;
+}
