@@ -1,3 +1,162 @@
+.right {
+    flex: 1;
+    position: absolute;
+    top: 15%;
+    left: 25%;
+    padding: 20px;
+    padding-left: 100px;
+    box-sizing: border-box;
+    font-size: 20px;
+    height: 100vh;
+}
+
+.left {
+    width: 300px;
+    height: 100vh;
+    position: sticky;
+    padding-left: 100px;
+    padding-top: 50px;
+}
+
+.btn_wtr {
+    border-radius: 2rem;
+    font-size: 20px;
+    padding: 7px;
+    margin-top: 10px;
+    width: 100%;
+    background-color:  lightcoral;
+    color: white;
+
+}
+
+.btn_wtr:hover {
+    background-color: lightgreen;
+}
+
+.btn_wtr:active {
+    border: 2px solid lightgreen;
+}
+img {
+    max-width: 100%;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Playfair Display', serif;
+}
+
+.paragraph_info {
+    font-size: 15px;
+    width: 70%;
+}
+
+
+.wrapper_2 {
+    display: flex;
+    list-style: none;
+    margin-right: 10px;
+    justify-content: space-around;
+    background-color: beige; 
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.row {
+    display: flex;
+}
+
+.book .star-container {
+    color: #e87400;
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    padding: .5rem;
+    border-radius: 8px;
+    border: 2px solid transparent;
+}
+
+.book .star-container:hover {
+    background-color: var(--color-bg-rating-star-empty);
+}
+
+.book .star-container:active {
+    border: 2px solid var(--color-text-body-light);
+}
+
+.book .star-container svg:last-child {
+    color: #c2c7cc;
+}
+
+.book span {
+    color: var(--color-text-disabled);
+}
+
+.book span.star-rating {
+    color: var(--color-text-body-light);
+    font-size: 2rem;
+    font-family: "Playfair Display";
+    font-weight: 600;
+    padding-inline: 1rem;
+}
+
+
+.help {
+    background-color: #f4f1ea;
+    text-align: center;
+    padding: 20px;
+    margin: 30px 50px;
+}
+
+.outline {
+    border-radius: 2rem;
+    font-size: 20px;
+    padding: 10px;
+    margin: 20px;
+}
+
+.outline:hover {
+    background-color:#c2c7cc;
+}
+footer {
+    background-color: #dcd6cc;
+}
+
+footer .col {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+
+}
+footer .col:last-child {
+    margin-left: auto;
+
+}
+footer .app-button-container {
+    gap: 1rem;
+}
+
+@media (width < 900px) {
+    footer .app-button-container {
+        flex-direction: column;
+    }
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer li a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--color-text-body-light);
+    padding-block: 0.2rem;
+}
+
+footer .store-button {
+    max-width: 140px;
+}
+
 :root {
     --color-bg-nav: #f4f1ea;
     --color-bg-body: #fff;
@@ -17,87 +176,19 @@
 
     --color-input-border: #dcd6cc;
     --color-input-bg: #fff;
-
-
-
 }
 
-* {
+
+/*{
     margin:0;
     padding:0;
     box-sizing: border-box;
-}
+}*/
 
 body {
     background-color: var(--color-bg-body);
+    color: var(--color-text-body-standard);
 
-}
+    font-family: Lato, Arial, Helvetica, sans-serif;
 
-.row {
-    display: flex;
-    gap: 1rem;
-    width: 100%;
-}
-
-.book .star-container {
-    color: orange;
-    display: inline-block;
-    text-decoration: none;
-    padding: 0.25rem 1rem;
-    border-radius: 8px;
-    border: 2px solid transparent;
-}
-
-.book .star-container:hover {
-    background-color: var(--color-bg-rating-star-empty);
-}
-
-.book .star-container svg:last-child {
-    color: lightgrey;
-}
-
-footer {
-    background-color: #dcd6cc;
-}
-
-footer.col {
-    /*min-width: 200px;*/
-    width: 30%;
-    flex: 1;
-}
-
-footer.col:last-child {
-    margin-left: auto;
-}
-
-.book span {
-    color: var(--color-text-disabled);
-}
-
-.book span.star-rating {
-    color: var(--color-text-body-light);
-    font-size: 0.5rem;
-}
-
-footer .app-button-container {
-    gap: 1rem;
-}
-
-footer ul {
-    list-style: none;
-}
-
-footer li a {
-    display: inline-block;
-    text-decoration: none;
-    color: var(--color-text-body-light);
-    /*text-decoration: ;*/
-}
-
-footer .store-button {
-    max-width: 140px;
-}
-
-footer .col:last-child {
-    margin-left: auto;
 }
